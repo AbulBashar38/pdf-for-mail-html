@@ -1,143 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      @font-face {
-        font-family: "Calibri";
-        src: url("./calibri-font-family/calibri-regular.ttf") format("truetype");
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: "Calibri";
-        src: url("./calibri-font-family/calibri-light.ttf") format("truetype");
-        font-weight: 300;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: "Calibri";
-        src: url("./calibri-font-family/calibri-bold.ttf") format("truetype");
-        font-weight: bold;
-        font-style: normal;
-      }
 
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      .body-content {
-        padding: 100px;
-        font-size: 14px;
-        line-height: 1.7;
-        font-family: "Calibri", sans-serif;
-        font-weight: 300;
-        position: relative;
-      }
-      .bar {
-        position: absolute;
-        width: 100%;
-        background-color: #145da0;
-      }
-      .topBar {
-        height: 20px;
-        top: 0;
-        left: 0;
-      }
-      .bottomBar {
-        height: 32px;
-        bottom: 0;
-        left: 0;
-      }
-      .doctorName {
-        color: #00008b;
-        /* font-style: italic; */
-        text-transform: capitalize;
-        font-family: "Courgette", "sans-serif" !important;
-        font-size: 22px;
-        /* margin-bottom: 4px; */
-      }
-      .doctorContainer {
-        text-align: right;
-      }
-      .doctorInfo {
-        font-size: 12px;
-        font-weight: 300;
-      }
-      .header-text {
-        margin-top: 10px;
-        margin-bottom: 30px;
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
-        color: #00008b;
-      }
-      .paragraphSection {
-        margin-bottom: 20px;
-      }
-      .signature {
-        width: 80px;
-        height: auto;
-        margin-bottom: 18px;
-      }
-      .paragraph {
-        margin-bottom: 40px;
-      }
-    </style>
-  </head>
-  <body class="body-content">
-    <div class="bar topBar"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    @font-face {
+      font-family: Calibri;
+      src: url("http://127.0.0.1:5501/calibri-font-family/Calibri.woff") format("woff");
+      font-weight: normal;
+    }
 
-    <h1 class="header-text">Travelling with Medication Authorisation</h1>
-    <div class="paragraphSection">
-      <p>Date: 21/05/2025</p>
-      <p>Name: Poulomi (Poulomi) Quazi</p>
-      <p>
-        Address: Station Rd, Harrow, UK, 82A Urquhart Road, Karnataka, London,
-        560006, United Kingdom
-      </p>
-      <p>Date of Birth: 08-03-1997</p>
-    </div>
-    <div class="paragraphSection">
-      <p>To Whom it may concern,</p>
-    </div>
+    @font-face {
+      font-family: Calibri;
+      src: url("http://127.0.0.1:5501/Courgette/Courgette-Regular.ttf")format("woff");
+      font-weight: 300;
+    }
 
-    <div class="paragraphSection">
-      <p>
-        This is a formal confirmation that the above-named person has been
-        officially prescribed the following medication:
-      </p>
-    </div>
-    <div class="paragraphSection">
-      <p>
-        • Testogel 50mg/5g unit - Apply quarter of a sachet (12.5mg) a day -
-        Supply 1 * 30-sachet boxes
-      </p>
-    </div>
-    <div class="paragraphSection">
-      <p>
-        This medication is essential for the ongoing treatment and health of the
-        above-named person. It is critical that they have access to it
-        throughout their travel to maintain their prescribed treatment regimen.
-      </p>
-    </div>
-    <div class="paragraphSection">
-      <p>
-        Please allow the patient to carry this medication and any necessary
-        accessories without hindrance.
-      </p>
-    </div>
-    <div class="paragraphSection paragraph">
-      <p>Thank you for your understanding and cooperation.</p>
-    </div>
+    @font-face {
+      font-family: Calibri;
+      src: url("http://127.0.0.1:5501/calibri-font-family/Calibri\ Bold.woff") format("woff");
+      font-weight: bold;
+    }
 
-    <p class="paragraphSection">Best regards,</p>
-    <img src="./signature.jpg" class="signature" alt="" />
-    <p>Head of Member Services</p>
-    <p>GenderGP</p>
-    <div class="bar bottomBar"></div>
-  </body>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      line-height: 1.25;
+    }
+
+    .body-content {
+      padding: 100px;
+      font-size: 16px;
+      font-family: Calibri;
+      font-weight: normal;
+      position: relative;
+      height: 100vh;
+    }
+
+    .bar {
+      position: absolute;
+      width: 100%;
+      background-color: #145da0;
+    }
+
+    .topBar {
+      height: 20px;
+      top: 0;
+      left: 0;
+    }
+
+    .bottomBar {
+      height: 32px;
+      bottom: 0;
+      left: 0;
+    }
+
+    .header-text {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: #00008b;
+    }
+
+    .paragraphSection {
+      margin-bottom: 20px;
+    }
+
+    .signature {
+      width: 80px;
+      height: auto;
+      margin-bottom: 18px;
+    }
+
+    .paragraph {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body class="body-content">
+  <div class="bar topBar"></div>
+
+  <h1 class="header-text">Travelling with Medication Authorisation</h1>
+  <div class="paragraphSection">
+    <p>Date: 22/05/2025</p>
+    <p>Name: Poulomi (Poulomi) Quazi</p>
+    <p>
+      Address: Station Rd, Harrow, UK, 82A Urquhart Road, Karnataka, London,
+      560006, United Kingdom
+    </p>
+    <p>Date of Birth: 08-03-1997</p>
+  </div>
+  <div class="paragraphSection">
+    <p>To whom it may concern,</p>
+  </div>
+
+  <div class="paragraphSection">
+    <p>
+      This is a formal confirmation that the above-named person has been
+      officially prescribed the following medication:
+    </p>
+  </div>
+  <div class="paragraphSection">
+    <p>
+      • Testogel 50mg/5g unit - Apply quarter of a sachet (12.5mg) a day -
+      Supply 1 * 30-sachet boxes
+    </p>
+  </div>
+  <div class="paragraphSection">
+    <p>
+      This medication is essential for the ongoing treatment and health of the
+      above-named person. It is critical that they have access to it
+      throughout their travel to maintain their prescribed treatment regimen.
+    </p>
+  </div>
+  <div class="paragraphSection">
+    <p>
+      Please allow the patient to carry this medication and any necessary
+      accessories without hindrance.
+    </p>
+  </div>
+  <div class="paragraphSection paragraph">
+    <p>Thank you for your understanding and cooperation.</p>
+  </div>
+
+  <p class="paragraphSection">Best regards,</p>
+  <img src="http://127.0.0.1:5501/signature.jpg" class="signature" alt="" />
+  <p>Head of Member Services</p>
+  <p>GenderGP</p>
+  <div class="bar bottomBar"></div>
+</body>
+
 </html>
