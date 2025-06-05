@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "Calibri";
+        src: url("./calibri-font-family/calibri-regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Calibri";
+        src: url("./calibri-font-family/calibri-light.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Calibri";
+        src: url("./calibri-font-family/calibri-bold.ttf") format("truetype");
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Courgette";
+        src: url("./Courgette/Courgette-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .qrStyle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .qrPhoto {
+        width: 52px;
+        height: 52px;
+      }
+      .body-content {
+        padding: 50px 100px 100px 100px;
+        font-size: 14px;
+        line-height: 1.7;
+        font-family: "Calibri", sans-serif;
+        font-weight: 300;
+        position: relative;
+      }
+
+      .bar {
+        position: absolute;
+        width: 100%;
+        background-color: #145da0;
+      }
+
+      .topBar {
+        height: 24px;
+        top: 0;
+        left: 0;
+      }
+
+      .bottomBar {
+        height: 24px;
+        bottom: 0;
+        left: 0;
+      }
+
+      .doctorName {
+        color: #00008b;
+        /* font-style: italic; */
+        text-transform: capitalize;
+        font-family: "Courgette", "sans-serif" !important;
+        font-size: 22px;
+        /* margin-bottom: 4px; */
+      }
+
+      .doctorContainer {
+        text-align: right;
+      }
+
+      .doctorInfo {
+        font-size: 12px;
+        font-weight: 300;
+      }
+
+      .header-text {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #00008b;
+      }
+      .text-primary {
+        color: #00008b;
+        font-weight: 600;
+      }
+      .paragraphSection {
+        margin-bottom: 20px;
+      }
+
+      .signature {
+        margin-top: 100px;
+      }
+
+      .paragraph {
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+
+  <body class="body-content">
+    <div class="bar topBar"></div>
+    <div class="doctorContainer">
+      <p class="doctorName">Test Doctor2</p>
+      <p class="doctorInfo">
+        Calle Callao 9 Entresuelo Barcelona CATALUÑA SPAIN 08014
+      </p>
+      <p class="doctorInfo">Reg: 65038</p>
+      <p class="doctorInfo">Email: testdoctor1234@gmail.com</p>
+      <p class="doctorInfo">Phone: 01908899996</p>
+    </div>
+    <div class="paragraphSection">
+      <strong class="text-primary">Private Prescripton</strong>
+      <p>Date: May 27, 2025</p>
+    </div>
+    <div class="paragraphSection">
+      <strong class="text-primary">Member Details</strong>
+      <p>Name: Poulomi (Poulomi) Quazi</p>
+      <p>Date of Birth: 08-03-1997</p>
+      <p>CPR Number: 12345</p>
+      <p>
+        Address: Station Rd, Harrow, UK, 82A Urquhart Road, Karnataka, London,
+        560006, United Kingdom
+      </p>
+    </div>
+    <div class="paragraphSection">
+      <strong class="text-primary">Member Details</strong>
+      <p>
+        • Utrogestan cap 100mg - Take one a day - Supply 3 * 30-capsule boxes
+      </p>
+    </div>
+
+    <div class="paragraphSection">
+      <strong class="text-primary">Prescribed By: test doctor 5</strong>
+    </div>
+    <div class="paragraphSection">
+      <strong class="text-primary">Verifying Prescriber Details:</strong>
+      <p>
+        Please use your phone camera to scan this QR code to check the validity
+        of this prescripton.
+      </p>
+    </div>
+    <div class="paragraphSection">
+      <p>
+        Input the prescriber’s collegiate number in the search box. test doctor
+        5 collegiate number is 65038.
+      </p>
+    </div>
+    <div class="paragraphSection paragraph">
+      <p>Click ‘search’ to access the prescriber's credentals.</p>
+    </div>
+    <div class="qrStyle">
+      <img src="./qr.png" class="qrPhoto" />
+    </div>
+    <div class="bar bottomBar"></div>
+  </body>
+</html>
